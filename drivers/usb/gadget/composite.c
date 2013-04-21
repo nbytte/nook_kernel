@@ -28,6 +28,7 @@
 
 #include <linux/usb/composite.h>
 
+#include <linux/delay.h>
 
 /*
  * The code in this file is utility code, used to build a gadget driver
