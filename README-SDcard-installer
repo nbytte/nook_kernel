@@ -1,0 +1,8 @@
+# To build kernel for use with verygreen SDcard installer
+
+export CCOMPILER=/media/android/android/system/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
+alias makeuImage='make ARCH=arm CROSS_COMPILE=$CCOMPILER uImage'
+
+cp arch/arm/configs/omap3621_evt1a_SDcard-installer .config
+
+makeuImage
